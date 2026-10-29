@@ -1,0 +1,136 @@
+/* Midnight travel palette. Layout and puzzle coordinates stay in portrait.css. */
+body {
+  background:
+    radial-gradient(ellipse at 18% 18%, #1d4a55 0, transparent 46%),
+    radial-gradient(ellipse at 84% 82%, #34344e 0, transparent 45%),
+    #080f1c;
+}
+body::before { background-image: none; }
+#app {
+  background: radial-gradient(ellipse at 0 8%, #23444b55, transparent 46%),
+    linear-gradient(155deg, #162e3d, #102432 64%, #122b38);
+  border-color: #42606b;
+  box-shadow: 0 36px 95px #0008, 0 0 0 7px #c1ded508, inset 0 1px #d7eee81a;
+}
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 3px solid var(--mint);
+  outline-offset: 4px;
+}
+.site-header { border-color: #53717b55; background: #0b1b2840; }
+.brand { color: #f1f5ee; }
+.brand-icon {
+  color: #182d35;
+  background: linear-gradient(145deg, #ffd69c, #f2a570);
+  box-shadow: 0 3px 12px #0003, inset 0 1px #ffe4bc;
+}
+.brand-dot { color: #ffb481; }
+.icon-button { color: #c4dcd9; background: #1c35415c; border-color: #45606c; }
+.icon-button:hover { color: #e8fff5; background: #2b4c59; border-color: #7eb3ae; }
+.game-heading .eyebrow { color: #9bbdbd; }
+.game-heading h2 {
+  font-family: var(--sans);
+  font-weight: 750;
+  letter-spacing: -.045em;
+  color: #f1f4eb;
+}
+.level-tag { background: #29464d; color: #c4e4cf; border: 1px solid #4b6f6a; }
+.discovery-banner {
+  background: #1b3c46;
+  border-color: #436670;
+  box-shadow: inset 0 1px #c2e2d90a;
+}
+.discovery-banner.is-new {
+  background: linear-gradient(110deg, #4a4039, #2a3d43 80%);
+  border-color: #8f75604f;
+}
+.discovery-banner strong { color: #f5e7d7; }
+.discovery-banner small { color: #b4c8ca; }
+.discovery-icon { color: #a6d5cb; }
+.new-pill { color: #332b27; background: #f8be8c; box-shadow: 0 2px 8px #0002; }
+.packing-status, .packing-status>span:last-child { color: #b3c8ce; }
+.progress-track { background: #2a4653; }
+.progress-track>span { background: linear-gradient(90deg, #70c8b2, #d5e8a7); box-shadow: 0 0 10px #97e2bd50; }
+.suitcase {
+  background: linear-gradient(130deg, #e2bc84, #b77a47 45%, #dfad72 76%, #9f663d);
+  border-color: #d0a26a;
+  box-shadow: inset 0 2px 2px #ffe1af, inset 0 -3px 2px #754b31,
+    0 10px 14px #020b1540, 0 22px 32px -14px #0009;
+}
+.suitcase::before { border-color: #ebc492; }
+.board {
+  background-color: #173e47;
+  background-image: radial-gradient(ellipse at 40% 8%, #38696344, #071d2e80),
+    linear-gradient(135deg, transparent 49.5%, #7ab6ae05 50%, transparent 50.5%);
+  box-shadow: inset 0 0 22px #001c2e;
+}
+.cell { border-color: #b2d3c925; box-shadow: inset 1px 1px 3px #001b2525; }
+.cell:focus-visible { outline-color: #b7f1d5; }
+.cell.landing { background: #91e8c040; box-shadow: inset 0 0 0 1px #acf3d3b0; }
+.cell.invalid { background: #f075754d; box-shadow: inset 0 0 0 1px #ff9999; }
+.piece.selected { background: #a5ebcc1f; box-shadow: inset 0 0 0 2px #b9f3d7; }
+.tray-heading>span:first-child { color: #b7cccb; }
+.tray-help { color: #acc2cd; }
+.tray-piece {
+  background: linear-gradient(145deg, #24424f, #1a3442);
+  border-color: #486674;
+  box-shadow: inset 0 1px #d8f2e815, 0 4px 9px #020c1526;
+}
+.tray-piece:hover { background: #2c4f5d; border-color: #84b9b1; }
+.tray-piece.selected { background: #2b5358; box-shadow: inset 0 0 0 2px #9ae2c7; border-color: #9ae2c7; }
+.tray-piece>.piece-visual { filter: drop-shadow(0 4px 3px #06151f70); }
+.piece-size { color: #b9ccd0; }
+.secondary-button { color: #e2eeec; background: #244352; border-color: #597b87; box-shadow: 0 3px 0 #081a27; }
+.secondary-button:hover:not(:disabled) { background: #315766; }
+.secondary-button:disabled { opacity: .55; }
+.hint-button, .primary-button {
+  color: #202c33;
+  background: linear-gradient(145deg, #ffc28e, #f09a6b);
+  border-color: #f8be8f;
+  box-shadow: 0 3px 0 #a25d42, 0 6px 14px #020b152b;
+}
+.hint-button:hover, .primary-button:hover { background: linear-gradient(145deg, #ffd5a7, #ffb481); }
+.undo-button { color: #bce1d5; }
+.game-bottom>span { color: #b8d5c8; }
+.text-button { color: #b8cdd3; text-decoration-color: #7eb8af; }
+.text-button:hover { color: #e0f7e9; }
+.site-footer { color: #95aebd; border-color: #425e6a; }
+.all-packed { color: #c3ecd5; }
+.toast { background: #183c48f5; color: #e9fff4; border: 1px solid #66998e; box-shadow: 0 10px 35px #0006; }
+dialog {
+  color: var(--ink);
+  background: radial-gradient(ellipse at 0 0, #25475080, transparent 60%), #142c3b;
+  border-color: #557581;
+  box-shadow: 0 28px 100px #0009, inset 0 1px #bbded812;
+  scrollbar-color: #5b8590 #142c3b;
+}
+dialog::backdrop { background: #030c19b8; backdrop-filter: blur(8px); }
+dialog>.eyebrow { color: #a8d7c2; }
+dialog h2 { font-family: var(--sans); font-weight: 700; letter-spacing: -.04em; }
+.modal-close { background: #26414f; }
+.modal-footnote { color: #acc1c9; }
+.level-tile { color: #d5e6e7; border-color: #4c6b78; background: #244352; }
+.level-tile:hover:not(:disabled) { border-color: #b9e6d2; }
+.level-tile:disabled { color: #8ba4b2; background: #1b3342; opacity: .65; }
+.level-tile.done { background: #285349; color: #b8f3cd; border-color: #679a82; }
+.level-tile.current { background: #f3b07f; color: #273339; border-color: #ffd4a4; box-shadow: 0 0 0 3px #f3b07f20; }
+.daily-entry { color: #e6f3ed; background: #214454; border-color: #4e7c86; }
+.daily-entry small { color: #b1cbd2; }
+.help-illustration>.icon { color: #eab184; }
+.help-steps b { background: #27464d; color: #bcead4; border-color: #567b77; }
+.win-illustration>.icon { stroke: #b3e5c7; fill: #295044; }
+.win-illustration span { color: #ffc58f; }
+.win-stats { color: #b3c9cf; }
+.collection-item { background: #213f4b; border-color: #476675; }
+.collection-item small { color: #bed1d3; }
+.collection-item.locked { background: #1b3342; border-color: #3d5967; opacity: .75; }
+.unknown-item { color: #95b5c0; }
+.backup-summary { background: #214b4b; border: 1px solid #426c67; }
+.backup-summary strong { color: #c3efd2; }
+.backup-import input::file-selector-button { color: #e5f2ec; background: #294b5a; border-color: #5d8290; }
+@media (max-width: 600px) {
+  body { background: #0c1d2b; }
+  #app { box-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

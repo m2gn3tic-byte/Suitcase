@@ -1,0 +1,12 @@
+:root {
+  --paper: #112635;
+  --ink: #edf4f3;
+  --muted: #adc0ca;
+  --rust: #ffb481;
+  --coral: #f5a372;
+  --line: #35505e;
+  --mint: #9ae2c7;
+  --sans: 'Trebuchet MS', Arial, sans-serif;
+  --serif: Georgia, 'Times New Roman', serif;
+  color-scheme: dark;
+}
