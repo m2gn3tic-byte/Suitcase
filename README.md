@@ -16,7 +16,11 @@ Versioonis 0.4 on:
 
 ## Veebis proovimine
 
-Veebitestiversiooni failid valmistatakse aadressiosale `/Suitcase/`. GitHub Pagesi aktiveerimise juhis ja allalaaditav arvutiversioon on [testimise juhendis](docs/TESTIMINE.md). Veebilehe päris avaldamist kontrolli GitHubi Pagesi seadetes ja avaldatud aadressil; kohalik ehitus üksi seda ei kinnita.
+**[Ava mäng brauseris](https://m2gn3tic-byte.github.io/Suitcase/)**
+
+GitHub Pagesi [avaldamistöö](https://github.com/m2gn3tic-byte/Suitcase/actions/runs/40878288737) lõppes edukalt 29.10.2026. Mäng avaneb ka arvutis 9:16 püstvaatena. Pilve võrgupoliitika ei luba avaliku lehe HTTP-vastust siin kontrollida; tootmisversiooni mängimist, faile ja alamkataloogi testiti kohalikus brauseris.
+
+Alternatiiv: **[arvuti prooviversioon ZIP-ina](https://github.com/m2gn3tic-byte/Suitcase/archive/refs/heads/playtest.zip)**. Paki lahti ja ava `Mahub-kull.html`. Allalaadimine ja testitud failiga kokkulangevus on kontrollitud. Juhend: [docs/TESTIMINE.md](docs/TESTIMINE.md).
 
 ## Arendamine
 

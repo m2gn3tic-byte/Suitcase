@@ -37,4 +37,4 @@ async function commitFiles(branch,directory) {
 await commitFiles('gh-pages',resolve(root,'dist-pages'));
 await commitFiles('playtest',download);
 git(['push','--atomic','origin','refs/heads/gh-pages','refs/heads/playtest'],{stdio:'inherit'});
-console.log('Test builds sent to GitHub. Configure Pages to deploy gh-pages /(root).');
+console.log('Test builds sent to GitHub. Check the Pages deployment in repository Actions.');

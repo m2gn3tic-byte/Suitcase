@@ -13,6 +13,8 @@ APK SHA-256: `7ae9ce2bf84c736253f044dfb8ff40084f86789e7b1d3545df61662367f528e2`.
 
 Päris Androidi telefonis ega emulaatoris mängimist ei kontrollitud. Hallatud Chromium ei luba `file://` avamist; iseseisvat HTML-i testiti täpse dokumendina võrguühenduseta ja lisapäringuteta.
 
-Kasutaja palus selle versiooni veebist proovitavaks teha. GitHubi HTTPS-hoidla on ligipääsetav. Keskkonna võrgupoliitika blokeerib `api.github.com` ja `m2gn3tic-byte.github.io`, mistõttu GitHub Pagesi seadistust ega avaliku mängulehe HTTP-vastust ei saa siit kontrollida. Neid piiranguid ei tohi käsitleda tõendina, et veebileht on avaldatud või töökorras. Avaldamise sammud on failis [TESTIMINE.md](TESTIMINE.md).
+Kasutaja palus selle versiooni veebist proovitavaks teha. Lähtekood saadeti harusse `main`, veebiversioon harusse `gh-pages` ja arvutiversioon harusse `playtest`. GitHubi [Pagesi avaldamistöö](https://github.com/m2gn3tic-byte/Suitcase/actions/runs/40878288737) lõppes olekuga **Success** ja andis aadressi **https://m2gn3tic-byte.github.io/Suitcase/**. GitHubist tagasi laaditud ZIP tagastas HTTP 200 ning vastab täpselt testitud iseseisvale HTML-ile. Avaldatud 1080 × 1920 eelvaate pilt tagastas samuti HTTP 200 ja vastab kohalikule pildile.
+
+ GitHubi HTTPS-hoidla on ligipääsetav. Keskkonna võrgupoliitika blokeerib `api.github.com` ja `m2gn3tic-byte.github.io`, mistõttu GitHub Pagesi seadistust ega avaliku mängulehe HTTP-vastust ei saa siit kontrollida. Neid piiranguid ei tohi käsitleda tõendina, et veebileht on avaldatud või töökorras. Avaldamise sammud on failis [TESTIMINE.md](TESTIMINE.md).
 
 Varasem keskkonna seadistuse salvestus tagastas `draft_not_editable`. Täielikud ettevalmistusjuhised on failides [cloud/INSTALL.sh](cloud/INSTALL.sh) ja [cloud/START.md](cloud/START.md). See ei takistanud käesoleva mängukoodi arendamist, ehitamist ega kohalikke brauseriteste. Hoidlate valikut ei muudetud ning vana `/workspace/whatever` töökaust säilitati.

@@ -4,7 +4,11 @@ Testimise põhiline siht on arvuti veebibrauser, kus mäng avaneb telefonile mõ
 
 ## Praegune arenduskoopia
 
-Mängu töökaust on `/workspace/Suitcase`. Mängus on 24 taset, 18 eset, tume kujundus, graafika, Androidi projekt ja automaattestid. Ületoomine ja kohalik ehitus ei avalda mängu uuel veebiaadressil. Avaliku Suitcase'i mängulingi toimimist pole kinnitatud.
+**[Ava mäng brauseris](https://m2gn3tic-byte.github.io/Suitcase/)**
+
+GitHub Pagesi [avaldamistöö](https://github.com/m2gn3tic-byte/Suitcase/actions/runs/40878288737) lõpetas edukalt 29.10.2026. Avaldatud `gh-pages` commit on `cda494966e64b7089f4e5fb1da53991148386c88`, mängu lähtekood `489c528ae764e172c66f232f2ab3fdb2333fd2ca`. Pilve võrgupoliitika blokeerib Pagesi hosti ja GitHubi haldus-API, seega mänguaadressi otsest HTTP-vastust siin ei kontrollitud. Sama tootmisehitust kontrolliti kohaliku `/Suitcase/` alamkataloogi serveriga, arvutis ja telefonivaates.
+
+Mängu töökaust on `/workspace/Suitcase`. Mängus on 24 taset, 18 eset, tume kujundus, graafika, Androidi projekt ja automaattestid.
 
 Pilvekeskkonna avaldamine säilitab arendusfailid. See ei ava mängu veebilehena ega muuda `/workspace/...` failiteid kasutaja allalaadimislinkideks. Arendusserver tuleb igas uues tööseansis uuesti käivitada.
 
@@ -15,7 +19,9 @@ npm ci --no-audit --no-fund
 npm run build:standalone
 ```
 
-Tulemus on `artifacts/Mahub-kull.html`. Kui fail on sinu arvutisse edastatud, ava see Chrome'i, Edge'i või Firefoxiga. Kood, stiilid ja esemepildid on failis koos; Node.js-i, kontot ega serverit pole mängimiseks vaja. Edenemise säilitamiseks kasuta sama brauserit ja failiasukohta või võta edenemisest varukoopia.
+**[Laadi avaldatud arvutiversiooni ZIP](https://github.com/m2gn3tic-byte/Suitcase/archive/refs/heads/playtest.zip)**, paki lahti ja ava `Mahub-kull.html`. Allalaadimine tagastas HTTP 200 ja ZIP-i HTML vastab bait-baidilt testitud failile. HTML-i SHA-256 on `a99934a5353d0794c550a200821f92ee6cc7e675dbe78c31fa604d96d586b62e`.
+
+Kordusehituse tulemus on `artifacts/Mahub-kull.html`. Kui fail on sinu arvutisse edastatud, ava see Chrome'i, Edge'i või Firefoxiga. Kood, stiilid ja esemepildid on failis koos; Node.js-i, kontot ega serverit pole mängimiseks vaja. Edenemise säilitamiseks kasuta sama brauserit ja failiasukohta või võta edenemisest varukoopia.
 
 Hallatud pilve-Chromium keelab administraatori reegliga `file://` avamise. Iseseisva faili test kasutab täpselt eksporditud HTML-i võrguühenduseta dokumendina ja keelab lisapäringud. Päris arvutis failile topeltklõpsamist tuleb eraldi kontrollida.
 
@@ -29,7 +35,7 @@ Tulemus on `dist-pages/` ja aadressiosa `/Suitcase/`. Kaustatee suurtäht on olu
 
 Avaldamisloaga ja puhta, commit'itud lähtekoodi korral saadab `npm run publish:playtest` ehitatud lehe harusse `gh-pages` ning iseseisva HTML-i ja avamisjuhendi harusse `playtest`. Skript kasutab praegust `origin` hoidlat, nõuab puhast tööpuud ja saadab testiharud ühe atomaarse lükkamisega. Sundlükkamist ei kasutata. Mõlema ehitusharu commit sisaldab lähtekoodi commit'i viidet.
 
-Seejärel vali [Suitcase'i Pagesi seadetes](https://github.com/m2gn3tic-byte/Suitcase/settings/pages) **Deploy from a branch → gh-pages → /(root) → Save**. Mänguaadressi ja `playtest` haru ZIP-i toimimist saab kinnitada pärast päris avaldamist. Alternatiivne `.github/workflows/playtest.yml` käivitub ainult käsitsi ning eeldab Pagesi allikaks GitHub Actionsi valimist.
+Praegusel Suitcase'il on Pages juba aktiveeritud. Uues hoidlas või seadistuse muutmisel vali [Suitcase'i Pagesi seadetes](https://github.com/m2gn3tic-byte/Suitcase/settings/pages) **Deploy from a branch → gh-pages → /(root) → Save**. Mänguaadressi ja `playtest` haru ZIP-i toimimist saab kinnitada pärast päris avaldamist. Alternatiivne `.github/workflows/playtest.yml` käivitub ainult käsitsi ning eeldab Pagesi allikaks GitHub Actionsi valimist.
 
 ## Edenemise ületoomine
 
